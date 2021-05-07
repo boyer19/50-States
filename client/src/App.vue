@@ -11,7 +11,7 @@ export default {
     
   },
   mounted() {
-    this.$stateService.getAllStates().then( states => console.log(states))
+    this.$stateService.getAllStates().then( states => console.log(states))        // Lifecycle hooks (method), making request via stateService axios
   }
 }
 </script>

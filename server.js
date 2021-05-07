@@ -16,6 +16,6 @@ app.use(function(err, req, res, next){
     res.status(500).send('Server error')
 })
 
-let server = app.listen(process.env.PORT || 3000, function() {
+let server = app.listen(process.env.PORT || 3000, function() {                  // Looks for PORT to run in, if there is not one- runs on PORT 3000
     console.log('server running on port', server.address().port)
 })
