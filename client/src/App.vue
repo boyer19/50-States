@@ -11,7 +11,7 @@
 <script>
 
 import PageHeader from '@/components/PageHeader.vue'
-import PageFooter from './components/PageFooter.vue'
+import PageFooter from '@/components/PageFooter.vue'
 import StateList from './components/StateList.vue'
 
 export default {

@@ -4,7 +4,7 @@ import StateList from '@/components/StateList'
 
 export default createRouter({
     history: createWebHashHistory(),
-    routers: [
+    routes: [
         {
             path: '/',
             name: 'StateList',
