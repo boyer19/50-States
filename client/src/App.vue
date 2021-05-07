@@ -2,7 +2,7 @@
   <div>
     <page-header></page-header>
 
-    <state-list></state-list>
+    <router-view></router-view>
 
     <page-footer></page-footer>
   </div>
