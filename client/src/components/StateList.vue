@@ -1,14 +1,16 @@
 <template>
-    <div>
-        <p v-for="state in states" v-bind:key="state.name">
-            {{ state.name }}                                    <!-- Shows each state by name, but in-row -->
-        </p>
+    <div class="state-list-container">>
+        <div class="state-container" v-for="state in states" v-bind:key="state.name">
+            <state-detail v-bind:state="state"></state-detail>                                  <!-- Shows each state by name, but in-row -->
+        </div>
     </div>
 </template>
 
 <script>
+import StateDetail from './StateDetail.vue'
 
 export default {
+    components: { StateDetail},
     name: 'StateList',
     data() {
         return {
@@ -30,5 +32,13 @@ export default {
 </script>
 
 <style scoped>
+    .state-list-container {
+        display: flex;
+        flex-wrap: wrap;                            /* http://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+        justify-content: space-evenly;
+    }
 
+.state-container {
+    margin: 1rem;                       
+}
 </style>
