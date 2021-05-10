@@ -4,7 +4,7 @@
 
    
 
-    <router-view></router-view>
+    <router-view></router-view>       <!-- uses index.js to display StateList -->
 
     <page-footer></page-footer>
   </div>

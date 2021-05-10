@@ -4,7 +4,7 @@ import App from './App.vue'
 
 import StateAPIService from '@/services/stateService'
 
-import router from '@/router'
+import router from '@/router'       // Needs forward slash
 
 let app = createApp(App)
 
