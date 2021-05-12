@@ -2,6 +2,7 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 import StateList from '@/components/StateList'
 import AboutSite from '@/components/AboutSite'              // Joins the AboutSite page in Components
 import AboutDesigner from '@/components/AboutDesigner'
+import StateMap from '@/components/StateMap'
 
 export default createRouter({
     history: createWebHashHistory(),
@@ -13,13 +14,18 @@ export default createRouter({
         },
         {
             path: '/about',
-            name: 'About',
+            name: 'AboutSite',
             component: AboutSite
         },
         {
             path: '/designer',
-            name: 'Designer',
+            name: 'AboutDesigner',
             component: AboutDesigner
+        },
+        {
+            path: '/map/:state',
+            name: 'StateMap',
+            component: StateMap
         }
     ]
 })
