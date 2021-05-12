@@ -9,8 +9,13 @@ export default {
 
     setVisited(stateName, visited) {
         // api/state/ ---state name----
-        let requestData = {visited: visited }                                               // requestData vs data is clearer
+        let requestData = { visited: visited }                                               // requestData vs data is clearer
         return axios.patch('/api/states/' + stateName, requestData).then( response => {
+            return response.data
+        })
+    },
+    getOneState(stateName) {
+        return axios.get('/api/state/' + stateName).then( response => {
             return response.data
         })
     }

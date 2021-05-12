@@ -6,6 +6,8 @@ import StateAPIService from '@/services/stateService'
 
 import router from '@/router'       // Needs forward slash
 
+import 'leaflet/dist/leaflet.css'
+
 let app = createApp(App)
 
 app.config.globalProperties.$stateService = StateAPIService
