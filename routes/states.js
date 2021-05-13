@@ -18,7 +18,7 @@ router.get('/state/:name', function(req, res, next) {
         .then( state => {
             if (state) {
                 return res.json(state)
-            } else {
+            } else {                                            // For example, if name is "NotAState"- 404 should be displayed
                return res.status(404).send('State not found') 
             }
         })
