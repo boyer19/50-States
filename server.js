@@ -1,7 +1,12 @@
 let express = require('express')
 let states_api = require('./routes/states')
+let path = require('path')
+
 
 let app = express()
+
+let vueAppPath = path.join(__dirname, 'client', 'dist')
+app.use(express.static(vueAppPath))         // Requests to the application doesn't specify a particular path, returns/serve files is the dist directory/ index.js is default file returned
 
 app.use(express.json())
 
