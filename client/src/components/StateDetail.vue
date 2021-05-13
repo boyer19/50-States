@@ -44,7 +44,7 @@
     width: 10rem;
     border: 1px gainsboro;
     border-radius: .3rem;
-    background-color: whitesmoke;
+    background-color: rgba(167, 170, 170, 0.726);
 }
 
 .visit-state {

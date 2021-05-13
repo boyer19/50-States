@@ -14,7 +14,7 @@ export default {
 #block-header {
     padding: 2rem 1rem;
     margin-bottom: 2rem;
-    border-radius: .3rem;
+    border-radius: 1rem;
     background-color: saddlebrown;
     background-image: url('~@/assets/map_header.jpg');
     background-position: center;

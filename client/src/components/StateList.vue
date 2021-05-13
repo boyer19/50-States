@@ -66,9 +66,12 @@ export default {
         display: flex;
         flex-wrap: wrap;                            /* http://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
         justify-content: space-evenly;
+        color:rgba(151, 8, 8, 0.801);
+        
     }
 
 .state-container {
-    margin: 1rem;                       
+    margin: 1rem; 
+    border: .2rem solid rgba(238, 232, 232, 0.349);                      
 }
 </style>
