@@ -72,6 +72,6 @@ export default {
 
 .state-container {
     margin: 1rem; 
-    border: .2rem solid rgba(238, 232, 232, 0.349);                      
+    border: .2rem solid rgba(247, 239, 239, 0.521);                      
 }
 </style>
