@@ -25,7 +25,10 @@ router.get('/state/:name', function(req, res, next) {
         .catch( err => next(err) )
 })
 router.get('/states/visited', function(req, res, next) {
-    States.findAll({where: { visited: true}}).then( states => {
+    // my mistake - I had you enter the arguments in the wrong order 
+    // the lab doesn't require you to order your states though. 
+    States.findAll({where: { visited: true}}, {order: ['name']}).then( states => {
+    //States.findAll({where: { visited: true}}).then( states => {
         return res.json(states)
     })
     .catch( err => next(err) )
