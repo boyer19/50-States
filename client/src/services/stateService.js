@@ -20,4 +20,10 @@ export default {
         })
     },
     // similar to getAllStates, '/api/states/visited 4-8
+    // new method name, use the path from your new route
+    getAllVisitedStates() {
+        return axios.get('/api/states/visited').then( response => {
+            return response.data
+        })
+    }
 }
