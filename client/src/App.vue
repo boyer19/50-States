@@ -36,6 +36,8 @@ export default {
    border-radius: 1rem;
   border: .3rem solid slategrey ;
   background-color:rgba(117, 148, 81, 0.527);
+   min-height: 100em;                             /* makes full body screen */
 
 }
+
 </style>

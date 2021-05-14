@@ -24,6 +24,12 @@ router.get('/state/:name', function(req, res, next) {
         })
         .catch( err => next(err) )
 })
+router.get('/states/visited', function(req, res, next) {
+    States.findAll({where: { visited: true}}).then( states => {
+        return res.json(states)
+    })
+    .catch( err => next(err) )
+})
 // patch route to update a state -visited or not
 // request to states/ --State Name
 router.patch('/states/:name', function(req, res, next){

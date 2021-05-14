@@ -3,6 +3,7 @@ import StateList from '@/components/StateList'
 import AboutSite from '@/components/AboutSite'              // Joins the AboutSite page in Components
 import AboutDesigner from '@/components/AboutDesigner'
 import StateMap from '@/components/StateMap'
+import AllStatesVisited from '@/components/AllStatesVisited'
 
 export default createRouter({
     history: createWebHashHistory(),
@@ -26,6 +27,11 @@ export default createRouter({
             path: '/map/:state',
             name: 'StateMap',
             component: StateMap
+        },
+        {
+            path: '/visited',
+            name: 'AllStatesVisited',
+            component: AllStatesVisited
         }
     ]
 })

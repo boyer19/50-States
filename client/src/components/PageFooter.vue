@@ -14,6 +14,11 @@
             <span class="nav-link">
                 <router-link to="/designer">About this Designer</router-link>
             </span>
+
+            <span class="nav-link">
+
+                <router-link to="/visited">States you have visited</router-link>
+            </span>
             
         </div>
 

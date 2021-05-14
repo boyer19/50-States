@@ -18,5 +18,6 @@ export default {
         return axios.get('/api/state/' + stateName).then( response => {
             return response.data
         })
-    }
+    },
+    // similar to getAllStates, '/api/states/visited 4-8
 }
